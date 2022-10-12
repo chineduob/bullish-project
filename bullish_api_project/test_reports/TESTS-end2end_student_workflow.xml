@@ -1,0 +1,29 @@
+<testsuite name="end2end_student_workflow.Student Management workflow" tests="1" errors="0" failures="0" skipped="0" time="0.826576" timestamp="2022-10-10T22:21:52.899250" hostname="emeka-chukwukere-macbook.local"><testcase classname="end2end_student_workflow.Student Management workflow" name="Be able to add, update, fetch and delete a student" status="passed" time="0.826576"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Be able to add, update, fetch and delete a student
+    Given request is made to add student endpoint ... passed in 0.521s
+    Then verify that the request is successfully made with a status code of 200 ... passed in 0.000s
+    And request is made to the update student endpoint to update student record ... passed in 0.041s
+    Then verify that the request is successfully made with a status code of 200 ... passed in 0.000s
+    And verify that the id key is returned in the response body ... passed in 0.001s
+    And verify that the firstName key is returned in the response body ... passed in 0.000s
+    And verify that the lastName key is returned in the response body ... passed in 0.000s
+    And verify that the studentClass key is returned in the response body ... passed in 0.000s
+    And verify that the nationality key is returned in the response body ... passed in 0.000s
+    And verify that the nationality of the student is Canada ... passed in 0.000s
+    Then request is made to the fetch students endpoint ... passed in 0.042s
+    Then verify that the request is successfully made with a status code of 200 ... passed in 0.000s
+    Then request is made to the fetch students endpoint by id ... passed in 0.049s
+    And verify that the request is successfully made with a status code of 200 ... passed in 0.000s
+    Then request is made to the fetch students endpoint by class ... passed in 0.026s
+    And verify that the request is successfully made with a status code of 200 ... passed in 0.000s
+    Then request is made to the fetch students endpoint by id and class ... passed in 0.021s
+    And verify that the request is successfully made with a status code of 200 ... passed in 0.000s
+    Then request is made to the delete student endpoint ... passed in 0.123s
+    And verify that the request is successfully made with a status code of 200 ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
